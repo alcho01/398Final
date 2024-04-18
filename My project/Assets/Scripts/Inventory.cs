@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (NumberOfMoney >= 7)
+        if (NumberOfMoney >= 5)
         {
             SceneManager.LoadScene(scenename);
         }

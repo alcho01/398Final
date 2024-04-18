@@ -20,9 +20,9 @@ public class ReceivePositionCamera : MonoBehaviour
 
     void OnReceiveXYZ(OscMessage message)
     {
-        float x = message.GetFloat(6);
-        float y = message.GetFloat(7);
-        float z = message.GetFloat(8);
+        float x = message.GetFloat(3);
+        float y = message.GetFloat(4);
+        float z = message.GetFloat(5);
 
         transform.position = new Vector3(x, y, z);
     }
